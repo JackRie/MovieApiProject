@@ -6,9 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class MovieInfoService {
   baseUrlMovies: string = 'https://api.themoviedb.org/3/discover/movie';
-  // baseUrlSearch: string = 'https://api.themoviedb.org/3/search/company?';
   baseUrlGenre: string = 'https://api.themoviedb.org/3/genre/movie/list';
-  baseUrlImage: string = 'https://api.themoviedb.org/3/configuration';
   key: string = '594792bbaf56e905471ed7af3e967aca';
   favorites: any = [];
 
@@ -59,17 +57,3 @@ export class MovieInfoService {
     this.favorites.splice(index, 1);
   };
 }
-
-//criteria:
-//genres
-// --select dropdown
-// --<select>
-// <option = genre.id *ngFor>
-// --make method in service to getGenres()
-// --inject service the component that has the form
-// --utilize the getGenres() on init
-// --make a dropdown with the array
-//primary-release-year
-//vote_average
-
-// https://api.themoviedb.org/3/discover/movie?api_key=594792bbaf56e905471ed7af3e967aca

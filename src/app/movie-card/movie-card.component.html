@@ -1,5 +1,4 @@
 <div class="card-container">
-  <!-- <p class="title-container">{{ movieRef.title }}</p> -->
   <button class="button" (click)="addMovieToFavorites(movieRef)">
     <span class="material-icons"> add_circle_outline </span>
   </button>
@@ -11,5 +10,4 @@
   <p class="title-container">{{ movieRef.title }}</p>
   <p>Year Released: {{ movieRef.release_date | date: "yyyy" }}</p>
   <p>Vote Average:{{ movieRef.vote_average }}</p>
-  <!-- <button (click)="addMovieToFavorites(movieRef)">Add to Favorites</button> -->
 </div>

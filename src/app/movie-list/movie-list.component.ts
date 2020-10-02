@@ -36,7 +36,7 @@ export class MovieListComponent implements OnInit {
       } else {
         this.movieServ.getDefaultData('8').subscribe((response) => {
           this.movies = response.results;
-          console.log(response);
+          // console.log(response);
         });
       }
     });
